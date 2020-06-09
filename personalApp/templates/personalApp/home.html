@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the home page</title>
+</head>
+<body class="body" style="background-color: #ff66ff">
+    <div>
+        {% extends "personalApp/header.html" %}
+        {% block content %}
+
+            <p>
+                Hey welcome to my website
+            </p>
+
+        {% include "personalApp/includes/htmlsnippet.html" %}
+        {% endblock %}
+    </div>
+</body>
+</html>

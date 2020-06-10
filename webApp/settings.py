@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # This is the web application I am linking to my site
-    'webapplication',
     'personalApp',
+    'blog',
 ]
 
 MIDDLEWARE = [

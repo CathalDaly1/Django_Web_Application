@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% extends "personalApp/header.html" %}
+
+    {% block content %}
+        {% for post in object_list %}
+            <h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{ post.id }}"> {{ post.title }}</a></h5>
+        {% endfor %}
+
+    {% endblock %}
+</head>
+<body>
+
+</body>
+</html>

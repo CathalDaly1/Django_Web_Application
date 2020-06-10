@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>This is the home page</title>
+    <title>This is the contact page</title>
 </head>
 <body class="body">
     <div>
         {% extends "personalApp/header.html" %}
         {% block content %}
+            {% for c in content %}
+                <p>{{c}}</p>
+            {% endfor %}
 
-            <p>Hey welcome to my website</p>
 
-        {% include "personalApp/includes/htmlsnippet.html" %}
+
         {% endblock %}
     </div>
 </body>
